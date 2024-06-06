@@ -18,6 +18,6 @@
   },
   "dependencies": {
     "hono": "^4.4.3",
-    "multerize": "^1.0.0-alpha.4"
+    "multerize": "^1.0.0-alpha.6"
   }
 }
