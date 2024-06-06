@@ -7,7 +7,8 @@ export default {
 
 		const upload = new Multerize({
 			storage: new R2StorageProvider({
-				r2Client: env.R2_BUCKET,
+				// r2Client: env.R2_BUCKET, // You can import the bucket via this way
+				envBucketKey: 'R2_BUCKET', // Or you can use the env key, and we'll automatically import the bucket for you from the env
 				destination: async (c, file) => {
 					const randomFolders = ['folder1', 'folder2', 'folder3'];
 
